@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flapjack-search"
-version = "0.1.0b1"
+version = "1.0.0"
 description = "A fully-featured and blazing-fast Python API client to interact with Flapjack Search. Drop-in replacement for algoliasearch."
 authors = ["Flapjack <support@flapjack.com>"]
 license = "MIT"

@@ -4,7 +4,7 @@ from importlib import import_module
 from pkgutil import iter_modules
 
 # The canonical version of the flapjacksearch package.
-__version__ = "0.1.0b1"
+__version__ = "1.0.0"
 
 
 def _sync_generated_subpackage_versions() -> None:
