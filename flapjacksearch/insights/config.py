@@ -63,9 +63,9 @@ class InsightsConfig(BaseConfig):
         self.hosts = HostsCollection(
             [
                 Host(
-                    "insights.algolia.io"
+                    "insights.flapjack.io"
                     if self.region is None
-                    else "insights.{region}.algolia.io".replace(
+                    else "insights.{region}.flapjack.io".replace(
                         "{region}", self.region or ""
                     )
                 )

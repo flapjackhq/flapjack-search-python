@@ -3,6 +3,7 @@ from flapjacksearch.abtesting_v3.config import AbtestingV3Config
 from flapjacksearch.analytics.config import AnalyticsConfig
 from flapjacksearch.composition.config import CompositionConfig
 from flapjacksearch.ingestion.config import IngestionConfig
+from flapjacksearch.insights.config import InsightsConfig
 from flapjacksearch.monitoring.config import MonitoringConfig
 from flapjacksearch.personalization.config import PersonalizationConfig
 from flapjacksearch.query_suggestions.config import QuerySuggestionsConfig
@@ -86,3 +87,14 @@ def test_monitoring_default_hosts_use_flapjack_domains() -> None:
         ["status.flapjack.io"],
         ["status.flapjack.io"],
     )
+
+
+def test_insights_default_hosts_use_flapjack_domains() -> None:
+    cases = [
+        (InsightsConfig("app", "key"), "insights.flapjack.io"),
+        (InsightsConfig("app", "key", "de"), "insights.de.flapjack.io"),
+        (InsightsConfig("app", "key", "us"), "insights.us.flapjack.io"),
+    ]
+
+    for config, expected_url in cases:
+        assert configured_host_urls(config) == ([expected_url], [expected_url])
