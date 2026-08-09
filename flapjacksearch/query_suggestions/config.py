@@ -60,7 +60,7 @@ class QuerySuggestionsConfig(BaseConfig):
         self.hosts = HostsCollection(
             [
                 Host(
-                    "query-suggestions.{region}.algolia.com".replace(
+                    "query-suggestions.{region}.flapjack.io".replace(
                         "{region}", self.region or ""
                     )
                 )

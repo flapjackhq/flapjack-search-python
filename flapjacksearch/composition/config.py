@@ -49,12 +49,12 @@ class CompositionConfig(BaseConfig):
         self.hosts = HostsCollection(
             [
                 Host(
-                    url="{}-dsn.algolia.net".format(self.app_id),
+                    url="{}-dsn.flapjack.io".format(self.app_id),
                     priority=10,
                     accept=CallType.READ,
                 ),
                 Host(
-                    url="{}.algolia.net".format(self.app_id),
+                    url="{}.flapjack.io".format(self.app_id),
                     priority=10,
                     accept=CallType.WRITE,
                 ),

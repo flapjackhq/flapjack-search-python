@@ -58,5 +58,5 @@ class IngestionConfig(BaseConfig):
             )
 
         self.hosts = HostsCollection(
-            [Host("data.{region}.algolia.com".replace("{region}", self.region or ""))]
+            [Host("data.{region}.flapjack.io".replace("{region}", self.region or ""))]
         )

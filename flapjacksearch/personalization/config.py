@@ -60,7 +60,7 @@ class PersonalizationConfig(BaseConfig):
         self.hosts = HostsCollection(
             [
                 Host(
-                    "personalization.{region}.algolia.com".replace(
+                    "personalization.{region}.flapjack.io".replace(
                         "{region}", self.region or ""
                     )
                 )

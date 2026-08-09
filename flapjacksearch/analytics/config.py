@@ -65,7 +65,7 @@ class AnalyticsConfig(BaseConfig):
                 Host(
                     "analytics.algolia.com"
                     if self.region is None
-                    else "analytics.{region}.algolia.com".replace(
+                    else "analytics.{region}.flapjack.io".replace(
                         "{region}", self.region or ""
                     )
                 )
