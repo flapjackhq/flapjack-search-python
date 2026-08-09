@@ -48,6 +48,6 @@ class MonitoringConfig(BaseConfig):
 
         self.hosts = HostsCollection(
             [
-                Host("status.algolia.com"),
+                Host("status.flapjack.io"),
             ]
         )

@@ -63,7 +63,7 @@ class AbtestingV3Config(BaseConfig):
         self.hosts = HostsCollection(
             [
                 Host(
-                    "analytics.algolia.com"
+                    "analytics.flapjack.io"
                     if self.region is None
                     else "analytics.{region}.flapjack.io".replace(
                         "{region}", self.region or ""

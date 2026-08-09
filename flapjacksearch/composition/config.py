@@ -58,9 +58,9 @@ class CompositionConfig(BaseConfig):
                     priority=10,
                     accept=CallType.WRITE,
                 ),
-                Host("{}-1.algolianet.com".format(self.app_id)),
-                Host("{}-2.algolianet.com".format(self.app_id)),
-                Host("{}-3.algolianet.com".format(self.app_id)),
+                Host("{}-1.flapjack.io".format(self.app_id)),
+                Host("{}-2.flapjack.io".format(self.app_id)),
+                Host("{}-3.flapjack.io".format(self.app_id)),
             ],
             reorder_hosts=True,
         )
